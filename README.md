@@ -69,14 +69,4 @@ python src/main.py [path-to-paper]
 4. **Analysis & Improvement**: The code is analyzed and improved based on best practices.
 5. **Project Generation**: The final code is organized into a proper project structure.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-[Add appropriate license information]
-
-## Acknowledgments
-
-- Thanks to all contributors and the academic community for their valuable research papers. 
+## Resources
