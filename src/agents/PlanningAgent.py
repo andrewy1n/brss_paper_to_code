@@ -1,6 +1,6 @@
 from openai import OpenAI
 import os
-from agents.BaseAgent import BaseAgent
+from .BaseAgent import BaseAgent
 
 class PlanningAgent(BaseAgent):
     def __init__(self):

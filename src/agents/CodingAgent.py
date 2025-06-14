@@ -1,7 +1,7 @@
 from openai import OpenAI
 import os
 import re
-from agents.BaseAgent import BaseAgent
+from .BaseAgent import BaseAgent
 
 class CodingAgent(BaseAgent):
     def __init__(self):

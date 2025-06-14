@@ -9,10 +9,12 @@ from pathlib import Path
 from typing import Dict, List
 from PyPDF2 import PdfReader
 
-from agents.PlanningAgent import PlanningAgent
-from agents.CodingAgent import CodingAgent
-from agents.CodeAnalysisAgent import CodeAnalysisAgent
-from agents.SimpleAnalysisAgent import SimpleAnalysisAgent
+from .agents import (
+    PlanningAgent,
+    CodingAgent,
+    CodeAnalysisAgent,
+    SimpleAnalysisAgent
+)
 from dotenv import load_dotenv
 
 load_dotenv()

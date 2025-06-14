@@ -3,7 +3,7 @@ import os
 import ast
 import json
 from typing import Dict, List, Any
-from src.agents.BaseAgent import BaseAgent
+from .BaseAgent import BaseAgent
 
 tools = [{
     "name": "ast_analysis",

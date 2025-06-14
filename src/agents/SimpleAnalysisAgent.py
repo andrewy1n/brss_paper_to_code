@@ -1,7 +1,7 @@
 from openai import OpenAI
 import os
 import json
-from src.agents.BaseAgent import BaseAgent
+from .BaseAgent import BaseAgent
 
 class SimpleAnalysisAgent(BaseAgent):
     def __init__(self):
