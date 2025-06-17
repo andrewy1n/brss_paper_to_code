@@ -34,7 +34,8 @@ class ProjectGenerator:
         project_name = f"project_{timestamp}"
         project_path = Path(OUTPUT_DIR) / project_name
         project_path.mkdir(parents=True, exist_ok=True)
-        return str(project_path)
+        self.project_dir = str(project_path)
+        return self.project_dir
 
     def cleanup(self) -> None:
         if self.project_dir and os.path.exists(self.project_dir):
@@ -181,6 +182,7 @@ class ProjectGenerator:
         written_files = []
         try:
             for file_path, content in code_blocks.items():
+                print(f"Writing file: {file_path}, {self.project_dir}")
                 full_path = os.path.join(self.project_dir, file_path)
                 
                 # Create parent directories if they don't exist
@@ -204,7 +206,7 @@ class ProjectGenerator:
 
     def generate_project(self, paper_path: str) -> None:
         try:
-            self.project_dir = self.create_project_directory()
+            self.create_project_directory()
             print(f"Created project directory: {self.project_dir}")
 
             paper_content = self.read_paper(paper_path)
